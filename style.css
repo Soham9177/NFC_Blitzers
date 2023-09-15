@@ -1,0 +1,182 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a background color and font for the whole page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Style the navigation bar */
+.navbar {
+    background-color: #007BFF;
+    color: white;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    list-style: none;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #0056b3;
+}
+
+/* Center the content on the page */
+.container-fluid {
+    text-align: center;
+    padding: 20px;
+}
+/* Adjust the size of the logo */
+.navbar-brand img {
+    width: 66px; /* Set the desired width in pixels */
+    height: 30px; /* Set the desired height in pixels */
+}
+
+
+/* Center the navigation links evenly in the navbar and align them to the left */
+.navbar-nav {
+    display: flex;
+    justify-content: flex-start; /* Align to the left */
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+
+
+/* Style individual navigation links */
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #0056b3;
+}
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a background color and font for the whole page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Style the navigation bar */
+.navbar {
+    background-color: #007BFF;
+    color: white;
+}
+
+.navbar-brand img {
+    width: 90px; /* Adjust the logo size as needed */
+    height: 60px;
+    margin-right: 50px; /* Add some spacing between the logo and navigation links */
+}
+
+.navbar-toggler-icon {
+    background-color: white; /* Color of the navbar toggler icon */
+}
+
+.navbar-nav {
+    list-style: none;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #b78d22;
+}
+
+/* Style the banner content */
+#banner-content {
+    /* background-color: #007BFF; */
+    color: black;
+    padding: 20px;
+}
+
+#banner-content h1 {
+    font-size: 28px;
+    margin-right: 10px;
+    font-weight: 900;
+    padding: 0;;
+
+}
+
+#banner-content h2 {
+    font-size: 18px;
+    padding: 0;
+}
+
+/* .button {
+    display: inline-block;
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+} */
+.button {
+    background-color:chocolate;
+    color:whitesmoke;
+    font-size: 16px;
+    margin: 35px 0;
+    padding: 11px 16px;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    transition: all .3s linear;
+    display: inline-block;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.button:hover {
+    background-color: #00418a;
+}
+
+/* Add spacing to the banner content */
+#banner-content .col-3 {
+    padding-right: 20px;
+}
+
+/* Center the banner content vertically */
+#banner-content {
+    display: flex;
+    align-items: center;
+}
+/* CSS to style the banner image */
+.col-9 img {
+    max-width: 100%; /* Adjust the maximum width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Center the image horizontally */
+    margin: 0 auto; /* Center the image horizontally */
+}
