@@ -1,182 +1,122 @@
-/* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Set a background color and font for the whole page */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-}
-
-/* Style the navigation bar */
-.navbar {
-    background-color: #007BFF;
-    color: white;
-}
-
-.navbar-brand {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.navbar-nav {
-    list-style: none;
-}
-
-.nav-link {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    transition: background-color 0.3s ease;
-}
-
-.nav-link:hover {
-    background-color: #0056b3;
-}
-
-/* Center the content on the page */
-.container-fluid {
+/* Style for the Disclaimer Section */
+.disclaimer {
+    background-color: #ff0000;
+    color: #fff;
     text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    position: relative; /* Ensure the disclaimer is positioned correctly */
+}
+
+/* Scrolling Disclaimer Styles */
+.disclaimer marquee {
+    white-space: nowrap; /* Prevents line breaks */
+}
+
+#ppf-introduction {
+    background-color: #f4f4f4;
     padding: 20px;
-}
-/* Adjust the size of the logo */
-.navbar-brand img {
-    width: 66px; /* Set the desired width in pixels */
-    height: 30px; /* Set the desired height in pixels */
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
-
-/* Center the navigation links evenly in the navbar and align them to the left */
-.navbar-nav {
-    display: flex;
-    justify-content: flex-start; /* Align to the left */
-    align-items: center;
-    width: 100%;
-    padding: 0;
+/* Rest of your styles */
+/* Style for the PPF Introduction Section */
+#ppf-introduction {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
-
-/* Style individual navigation links */
-.nav-link {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    transition: background-color 0.3s ease;
-}
-
-.nav-link:hover {
-    background-color: #0056b3;
-}
-
-/* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Set a background color and font for the whole page */
-body {
+/* Style for the Text within the Section */
+#ppf-introduction p {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    text-align: left;
 }
 
-/* Style the navigation bar */
-.navbar {
-    background-color: #007BFF;
-    color: white;
+/* Additional Styles (customize as needed) */
+#ppf-introduction h3 {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 10px;
+}
+/* Style for the Header */
+.header {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+ align-items: center;/* Center vertically */
+    height: 10vh; /* 100% viewport height */
+    background-color: #333; /* Background color for the header */
+    color: #fff; /* Text color */
+    font-size: 24px; /* Font size */
+    font-weight: bold; /* Font weight */
 }
 
-.navbar-brand img {
-    width: 90px; /* Adjust the logo size as needed */
-    height: 60px;
-    margin-right: 50px; /* Add some spacing between the logo and navigation links */
-}
-
-.navbar-toggler-icon {
-    background-color: white; /* Color of the navbar toggler icon */
-}
-
-.navbar-nav {
-    list-style: none;
-}
-
-.nav-link {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    transition: background-color 0.3s ease;
-}
-
-.nav-link:hover {
-    background-color: #b78d22;
-}
-
-/* Style the banner content */
-#banner-content {
-    /* background-color: #007BFF; */
-    color: black;
-    padding: 20px;
-}
-
-#banner-content h1 {
-    font-size: 28px;
-    margin-right: 10px;
-    font-weight: 900;
-    padding: 0;;
-
-}
-
-#banner-content h2 {
-    font-size: 18px;
+  
+  
+  
+ul {
+    list-style-type: none;
     padding: 0;
 }
 
-/* .button {
-    display: inline-block;
-    background-color: #0056b3;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
+/* Style for the key points */
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Make the list items bold */
+ul li strong {
     font-weight: bold;
+}
+
+/* Center the heading */
+h2 {
+    text-align: left;
     margin-top: 20px;
-    transition: background-color 0.3s ease;
-} */
-.button {
-    background-color:chocolate;
-    color:whitesmoke;
+}
+
+/* Add some space between the heading and the list */
+h2 + ul {
+    margin-top: 10px;
+}
+#tax-minimization-methods {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+#tax-minimization-methods p {
+    font-family: Arial, sans-serif;
     font-size: 16px;
-    margin: 35px 0;
-    padding: 11px 16px;
-    -webkit-transition: all .3s linear;
-    -moz-transition: all .3s linear;
-    transition: all .3s linear;
-    display: inline-block;
-    border-width: 3px;
-    border-style: solid;
+    color: #333;
+    line-height: 1.5;
+    text-align: left;
 }
 
-.button:hover {
-    background-color: #00418a;
+#tax-minimization-methods h3 {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 10px;
 }
-
-/* Add spacing to the banner content */
-#banner-content .col-3 {
-    padding-right: 20px;
-}
-
-/* Center the banner content vertically */
-#banner-content {
+/* Style for the Image Container */
+.image-container {
     display: flex;
-    align-items: center;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-top: 20px; /* Adjust margin as needed */
 }
-/* CSS to style the banner image */
-.col-9 img {
-    max-width: 100%; /* Adjust the maximum width as needed */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Center the image horizontally */
-    margin: 0 auto; /* Center the image horizontally */
+
+/* Style for the Small Image */
+.small-image {
+    max-width: 500px; /* Adjust the maximum width as needed */
+    max-height: 500px; /* Adjust the maximum height as needed */
 }
