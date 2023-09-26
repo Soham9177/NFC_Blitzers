@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/welcome.css">
+    <title>TaxEase360</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/logo.png" alt="TaxEase360 Logo">
+            </div>
+            <ul>
+                <li><a href="#top">Home</a></li>
+                <li><a href="#calculator">Tax Calculator</a></li>
+                <li><a href="#advice">Tax Advice</a></li>
+                <li><a href="/legal" id="excludeLink">Legal Compliance</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 align="center"><b><a href="/min">MINIMIZE YOUR TAXES NOW!</a></b></h1>
+
+    <section id="home">
+        <div class="container">
+            <h1>Welcome to TaxEase360</h1>
+            <p>We are your trusted partner in minimizing taxes legally and simplifying your financial life. Our mission is to make tax management easy and efficient for individuals and businesses.</p>
+            <p>Our Services:</p>
+            <ul>
+                <li><strong>Tax Calculation:</strong> Use our user-friendly tax calculator to instantly calculate your tax liabilities based on your financial information.</li>
+                <li><strong>Tax Advice:</strong> Benefit from our expert advisors who offer legitimate tax advice to help you optimize your tax payments and reduce your tax burden.</li>
+                <li><strong>Financial Insights:</strong> Gain insights into your financial health by comparing your tax liability before and after implementing our tax reduction methods.</li>
+            </ul>
+            <p>Our website is designed to provide you with easy access to these services and essential tax-related information. Explore our tools, resources, and expert guidance to take control of your finances and secure your financial future.</p>
+            <a href="/price"><h4>Click here to view our pricing</h4></a>
+        </div>
+    </section>
+
+    <section id="calculator">
+        <div class="container">
+            <h2>Tax Calculator</h2>
+            <p>Our TaxEase360 service provides a user-friendly tax calculator that allows you to instantly calculate your taxes based on the information you provide. Here's how it works:</p>
+            <ul>
+                <li>Enter your income details, including salary, investments, and deductions.</li>
+                <li>The calculator will generate a detailed breakdown of your tax liabilities.</li>
+                <li>You can use this tool to keep track of your total tax to be paid and compare it before and after implementing our tax reduction methods.</li>
+                <li>It helps you make informed financial decisions by providing insights into your tax liabilities.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="advice">
+        <div class="container">
+            <h2>Tax Advice</h2>
+            <p>At TaxEase360, we offer comprehensive tax advice and solutions tailored to your financial situation. Our expert advisors provide legitimate tax advice to help you optimize your tax payments. Here are some of the services we offer:</p>
+            <ul>
+                <li>Personalized tax planning to minimize tax liabilities within the legal framework.</li>
+                <li>Guidance on tax-saving investments, including tax-saving mutual funds, insurance, and more.</li>
+                <li>Strategies to claim deductions under various sections of the tax code.</li>
+                <li>Assistance with tax filing, ensuring compliance with tax laws and regulations.</li>
+                <li>Advice on handling tax audits and resolving tax-related issues.</li>
+                <li>Updates on changes in tax laws and how they may affect your financial situation.</li>
+            </ul>
+            <h3>Click <a href="/min">here</a> for more details or view our legal compliance <a href="/legal">here</a>.</h3>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or require assistance, please feel free to reach out to our team. We are here to help you with your tax-related queries.</p>
+            <ul>
+                <li>Email: info@taxease360.com</li>
+                <li>Phone: +91 123-456-7890</li>
+                <li>Address: 123, TaxEase Street, City Name, PIN Code</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>Copyright © 2023 TaxEase360. All Rights Reserved.</p>
+            <button id="openCalculator" href="/calc" onclick="openCalculatorWindow()">Open Tax Calculator</button>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+     function openCalculatorWindow() {
+    // Width and height for the new window (adjust as needed)
+    const windowWidth = 400;
+    const windowHeight = 600;
+
+    // Calculate the position for centering the new window
+    const windowLeft = (window.innerWidth - windowWidth) / 2;
+    const windowTop = (window.innerHeight - windowHeight) / 2;
+
+    // Open the new window with specified dimensions and position
+    window.open('/calc', 'TaxCalculatorWindow', `width=${windowWidth}, height=${windowHeight}, left=${windowLeft}, top=${windowTop}`);
+}
+    </script>
+      <script
+      src="https://www.chatbase.co/embed.min.js"
+      chatbotId="byXeDB2cETnQqmbPcWyo8"
+      domain="www.chatbase.co"
+      defer>
+  </script>
+</body>
+</html>

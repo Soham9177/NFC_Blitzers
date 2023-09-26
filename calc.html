@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="en">
+    <head>
+        <title>Tax Calculator</title>
+        <link rel="stylesheet" type="text/css" href="assets/calc.css">
+    </head>
+    <body>
+        <form id="incomeTaxForm">
+            <label for="income">Income:</label>
+            <input type="number" id="income" name="income" required><br><br>
+            
+            <label for="exemption">Total Exemption:</label>
+            <input type="number" id="exemption" name="exemption" required><br><br>
+            
+            <label for="surcharge">Surcharge:</label>
+            <input type="number" id="surcharge" name="surcharge" required><br><br>
+            
+            <label>Senior Citizen:</label>
+            <input type="radio" id="seniorYes" name="senior" value="Yes">
+            <label for="seniorYes">Yes</label>
+            
+            <input type="radio" id="seniorNo" name="senior" value="No" checked>
+            <label for="seniorNo">No</label><br><br>
+            
+            <button type="button" id="calculateButton" onclick="calculateTax()">Calculate</button>
+        </form>
+        
+        <div id="tax_result" class="hidden"></div>
+
+        <script>
+            // Smooth scrolling for navbar links
+// document.querySelectorAll('nav a').forEach(anchor => {
+//     anchor.addEventListener('click', function (e) {
+//         e.preventDefault();
+
+//         const targetId = this.getAttribute('href').substring(1);
+//         const targetSection = document.getElementById(targetId);
+
+//         window.scrollTo({
+//             top: targetSection.offsetTop,
+//             behavior: 'smooth'
+//         });
+
+//         // Flash only the div within the section
+//         flashElement(targetSection.querySelector('.container'), 300);
+//     });
+// });
+
+// // Highlight sections with flashing animation
+// function flashElement(element, duration) {
+//     let count = 0;
+//     const originalBackgroundColor = element.style.backgroundColor;
+
+//     const interval = setInterval(() => {
+//         if (count % 2 === 0) {
+//             element.style.backgroundColor = '#888'; // Highlight color
+//         } else {
+//             element.style.backgroundColor = originalBackgroundColor; // Reset to original
+//         }
+
+//         count++;
+
+//         if (count > 3) {
+//             clearInterval(interval);
+//             element.style.backgroundColor = originalBackgroundColor; // Ensure it's reset to original color
+//         }
+//     }, duration);
+// }
+/* Define function to calculate tax */
+calculateTax = () => {
+/* Initialize Base Parameters */
+    let finalTax, income = parseInt(document.getElementById("income").value), isSenior;
+    const exemptAmt = parseInt(document.getElementById("exemption").value), surcharge = parseInt(document.getElementById("surcharge").value), seniorList = document.getElementsByName("senior");
+
+    /* Adjust income */
+    income -= exemptAmt;
+
+    /* Senior Citizen check */
+    for (let i = 0; i < seniorList.length; i++) {
+        if (seniorList[i].checked) {
+            isSenior = seniorList[i].value;
+            break;
+        }
+    }
+
+    /* Calculate base tax */
+    if (isSenior === "No") {
+        if (income < 250000) {
+            finalTax = 0;
+        } else if (income>=250000 &&income < 500000) {
+            finalTax = 0.05 * income;
+        } else if (income>=500000 &&income < 1000000) {
+            finalTax = 0.2 * income + 12500;
+        } else {
+            finalTax = 0.3 * income + 112500;
+        }
+    } else {
+        if (income < 300000) {
+            finalTax = 0;
+        } else if (income >=300000 &&income < 500000) {
+            finalTax = 0.05 * income;
+        } else if (income >= 500000 &&income < 1000000) {
+            finalTax = 0.2 * income + 10000;
+        } else {
+            finalTax = 0.3 * income + 110000;
+        }
+    }
+
+    /* Add surcharge */
+    finalTax += surcharge;
+
+    /* Adding 4% cess for Health and Education */
+    finalTax *= 1.04;
+
+    /* Displaying final tax with a smooth reveal */
+    const taxResultDiv = document.getElementById("tax_result");
+    taxResultDiv.innerHTML = "<br>Tax to be paid: " + finalTax;
+    taxResultDiv.classList.add("show"); // Add the "show" class to reveal the result smoothly
+}
+
+// Function to open a new window with the form
+
+
+
+        </script>
+    </body>
+</html>

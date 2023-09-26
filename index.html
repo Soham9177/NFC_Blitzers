@@ -1,137 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tax Minimization</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="assets\style.css">
+    <script src="https://kit.fontawesome.com/7be879edf6.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <h1 class="header">TAX MINIMIZATION SOLUTIONS</h1>
-    <!-- Disclaimer Section -->
-    <div class="disclaimer">
-        <marquee behavior="scroll" direction="left">
-            Disclaimer: This website is intended for informational purposes only. We do not support or endorse any
-            illegal practices related to tax evasion or fraud. All tax minimization strategies provided here are
-            intended to be legal and compliant with applicable laws and regulations. Consult with a qualified
-            professional for personalized tax advice and ensure compliance with tax laws in your jurisdiction.
-        </marquee>
-    </div>
-
-    <!-- Main Content Area -->
-    <main id="content">
-        <section id="ppf-introduction" class="clearfix">
-            <div class="row clearfix">
-                <div class="col-3">
-                    <div class="section-heading">
-                        <h3>Understanding Tax-Saving PPF</h3>
+    <div class="container">
+        <div class="form">
+            <h1 id="title">Login</h1>
+            <form action="/" method="POST">
+                <div class="input">
+                    <div class="input-feild">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email"  name="username" placeholder="Email">
                     </div>
-                </div>
-                <div class="col-2-3">
-                    <p>Imagine a financial strategy that not only helps you save for the future but also lowers your
-                        income tax bill. That's precisely what the Public Provident Fund (PPF) offers. PPF is a
-                        government-backed savings plan where your investments not only grow over time but also reduce
-                        the amount of income subject to taxation. It's like a double benefit – you save for your goals,
-                        and at the same time, you pay less in taxes. Plus, the interest you earn on your PPF account is
-                        entirely tax-free. It's a win-win, helping you secure your financial future while keeping more
-                        money in your pocket.</p>
-                </div>
-            </div>
-            <div class="image-container">
-                <img src="images/graph.jpg" alt="bar diagram" class="small-image">
-            </div>
-            <div class="col-2-3">
-                <p>User 1 (Investing in PPF):
-                    Income: ₹10,00,000 per year
-                    Deductions under Section 80C (for PPF investment): ₹1,50,000 per year
-                    Applicable Tax Rate: 20% (for income above ₹5,00,000)
-                    User 2 (Not Investing in PPF):
-                    Income: ₹10,00,000 per year
-                    No deductions under Section 80C
-                    Applicable Tax Rate: 20%
-                    Calculations:
-                    
-                    User 1:
-                    
-                    Taxable Income = Income - Deductions = ₹10,00,000 - ₹1,50,000 = ₹8,50,000
-                    Tax Amount = Taxable Income * Tax Rate = ₹8,50,000 * 20% = ₹1,70,000
-                    User 2:
-                    
-                    Taxable Income = Income
-                    Tax Amount = Taxable Income * Tax Rate = ₹10,00,000 * 20% = ₹2,00,000
-                    End Tax Amount:
-                    
-                    User 1 pays ₹1,70,000 in taxes.
-                    User 2 pays ₹2,00,000 in taxes.</p>
-            </div>
 
-        </section>
-
-        <!-- Tax Minimization Methods Section -->
-        <section id="tax-minimization-methods" class="clearfix">
-            <div class="row clearfix">
-                <div class="col-3">
-                    <div class="section-heading">
-                        <h3>Invest in Tax-Efficient Funds</h3>
+                    <div class="input-feild">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" name="password" placeholder="Password">
                     </div>
+                    <p>Lost password <a href="https://accounts.google.com/ServiceLogin?hl=en-GB">Click Here!</a></p>
                 </div>
-                <div class="col-2-3">
-                    <p>  Overview: Tax-efficient funds are investment vehicles designed to minimize tax liabilities
-                        for investors. They are typically structured in a way that aims to reduce capital gains
-                        distributions, which can trigger taxable events for investors.
-                        How It Works: These funds are managed with strategies that focus on long-term capital
-                        appreciation rather than frequent buying and selling of assets. By holding investments for
-                        longer periods, they minimize the realization of short-term capital gains, which are often
-                        taxed at higher rates.
-                        Benefits: Investing in tax-efficient funds allows you to keep more of your investment
-                        returns by reducing your tax liability. It's a smart choice for investors who want to grow
-                        their wealth while minimizing their annual tax bills.
-                        Example: A tax-efficient mutual fund may hold onto winning investments for an extended
-                        period, allowing you to defer capital gains taxes until you decide to sell your shares.</p>
+                <div class="btn-feild">
+                    <button type="submit" id="signinBtn">Sign In</button>
                 </div>
-            </section>
-            </div>
-        <section id="tax-minimization-methods" class="clearfix">
-            <div class="col-3">
-                <div class="section-heading">
-                    <h3>Utilize Tax-Deferred Retirement Accounts</h3>
-                </div>
-            </div>
-            <div class="col-2-3">
-                <p>  Overview: Tax-deferred retirement accounts, such as 401(k)s and IRAs, are designed to help individuals save for retirement while receiving potential tax benefits.
-                    How It Works: Contributions made to these accounts may be tax-deductible in the year they are made, reducing your current taxable income. Additionally, any earnings on your investments within these accounts grow tax-deferred until you withdraw them in retirement.
-                    Benefits: By maximizing contributions to these accounts, you can reduce your current income tax liability while building a nest egg for retirement. The tax-deferred growth allows your investments to compound more effectively over time.
-                    Example: If you contribute $10,000 to a traditional 401(k), that amount is deducted from your taxable income for the year. You only pay taxes on the funds when you withdraw them in retirement, potentially at a lower tax rate.</p>
-            </div>
-        </section>
-
-        <section id="tax-minimization-methods" class="clearfix">
-            <div class="col-3">
-                <div class="section-heading">
-                    <h3>Tax Loss Harvesting</h3>
-                </div>
-            </div>
-            <div class="col-2-3">
-                <p> Overview: Tax loss harvesting is a strategy used to
-                    offset capital gains in your investment portfolio by selling investments that have declined
-                    in value.
-                    How It Works: When you have investments that are in a loss position, you can sell them to
-                    realize those losses. These losses can then be used to offset any capital gains you've
-                    earned in other parts of your portfolio, reducing your overall capital gains tax liability.
-                    Benefits: Tax loss harvesting allows you to minimize taxes on your investment gains. It's a
-                    proactive approach to managing your portfolio's tax impact, and it can be particularly
-                    useful in years when you have substantial capital gains.
-                    Example: Suppose you have $5,000 in capital gains from selling one investment but also have
-                    another investment that has lost $4,000 in value. By selling the losing investment, you can
-                    offset most of the gains, reducing your capital gains tax on that $5,000 to a much smaller
-                    amount. </p>
-            </div>
+            </form>
         </div>
-        </section>
-    </main>
+    </div>
 </body>
-<script src="script.js"></script>
-
 </html>
